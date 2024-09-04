@@ -30,7 +30,8 @@ jobs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
   on_start:
-    name: On start
+    name: push
+    
     needs: get_current_step
 
     # We will only run this action when:
